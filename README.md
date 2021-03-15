@@ -2,7 +2,7 @@
 
 <p align='center'><img width="200px" height="128px" src="https://i.imgur.com/UlW5AtX.png" alt="G"></p>
 
-# Commands
+# Done
 
 - [x] !setPrefix
 - [x] !setServer ip:port
