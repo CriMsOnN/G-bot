@@ -1,6 +1,6 @@
-# <p style='text-align: center;'><span style='color: red;'>G</span> Bot</p>
+<p style='text-align: center;'><span style='color: red;'>G</span> Bot</p>
 
-# <p style='text-align: center;'><img width="200px" height="128px" src="https://i.imgur.com/UlW5AtX.png" alt="G"></p>
+<p style='text-align: center;'><img width="200px" height="128px" src="https://i.imgur.com/UlW5AtX.png" alt="G"></p>
 
 # Commands
 
