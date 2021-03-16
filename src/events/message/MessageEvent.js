@@ -1,6 +1,7 @@
 const BaseEvent = require('../../utils/structures/BaseEvent');
 const GuildSchema = require('../../database/schema/Guild');
 const { prefix, setPrefix } = require('../../hooks/usePrefix');
+const { logger } = require('../../logger/Logs');
 
 module.exports = class MessageEvent extends BaseEvent {
   constructor() {
@@ -23,6 +24,7 @@ module.exports = class MessageEvent extends BaseEvent {
       const command = client.commands.get(cmdName);
       if (command) {
         command.run(client, message, cmdArgs);
+        logger.info(`${message.author.username} used ${cmdName}`);
       }
     }
   }

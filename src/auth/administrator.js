@@ -1,5 +1,5 @@
 const isAdmin = (message) => {
-  if (message.member.hasPermission('ADMINISTRATOR')) {
+  if (message.member.hasPermission('MANAGE_SERVER')) {
     return true;
   }
   return false;

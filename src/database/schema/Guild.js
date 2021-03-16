@@ -24,6 +24,18 @@ const GuildSchema = new mongoose.Schema({
     type: mongoose.SchemaTypes.String,
     required: false,
   },
+  instagramChannel: {
+    type: mongoose.SchemaTypes.String,
+    required: false,
+  },
+  darkchatChannel: {
+    type: mongoose.SchemaTypes.String,
+    required: false,
+  },
+  twitterChannel: {
+    type: mongoose.SchemaTypes.String,
+    required: false,
+  },
 });
 
 module.exports = mongoose.model('GuildConfig', GuildSchema);
