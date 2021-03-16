@@ -11,6 +11,11 @@ const GuildSchema = new mongoose.Schema({
     required: true,
     default: '!',
   },
+  serverIp: {
+    type: mongoose.SchemaTypes.String,
+    required: false,
+    default: null,
+  },
   defaultRole: {
     type: mongoose.SchemaTypes.String,
     required: false,
