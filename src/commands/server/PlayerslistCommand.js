@@ -2,7 +2,6 @@ const BaseCommand = require('../../utils/structures/BaseCommand');
 const { server } = require('../../hooks/useServer');
 const Discord = require('discord.js');
 const axios = require('axios');
-const Pagination = require('discord-paginationembed');
 module.exports = class PlayerslistCommand extends BaseCommand {
   constructor() {
     super('playerslist', 'server', []);
@@ -14,9 +13,6 @@ module.exports = class PlayerslistCommand extends BaseCommand {
         const serverIP = server.get(`server_${message.guild.id}`);
         const { data } = await axios.get(`http://${serverIP}/players.json`);
         const embed = new Discord.MessageEmbed();
-        const pages = [];
-        const playerNames = [];
-        const emojiList = ['⏪', '⏩'];
         let playersString = '';
         for (let i = 0; i < data.length; i++) {
           playersString += data[i].name + ', `' + data[i].ping + '`\n';
